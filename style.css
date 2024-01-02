@@ -16,15 +16,21 @@ html, body {
 
   .dm-sans-font {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   #title-header {
     font-size: 57.5px;
+    text-shadow: #202335 -3px 3px;  
+  }
+
+  #normal-header {
+    font-size: 25px;
+    color: #ff6c5c; 
   }
 
   .mint-colored-text {
-    color: rgb(79, 255, 147); 
+    color: #4fff93; 
   }
 
   .indent-text {
@@ -37,7 +43,7 @@ html, body {
     padding: 0;
     width: 200px;
     right: 0;
-    background-color: rgb(32, 35, 53);
+    background-color: #202335;
     position: fixed;
     height: 100vh;
     overflow: auto;
@@ -63,6 +69,7 @@ html, body {
   .linkedin-button {
     display: inline-block;
     border-radius: 5px;
+    margin-left: 40px;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -76,6 +83,23 @@ html, body {
     background-color: #b489ff;
   }
 
+  .github-button {
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-logo {
+    height: 40px; 
+  }
+
+  .github-button:hover {
+    background-color: #b489ff;
+  }
+
   .columns {
     box-sizing: border-box;
     display: grid;
@@ -86,27 +110,25 @@ html, body {
   #left-column {
     display: grid;
     background-color: #8866ab;
-    grid-template-rows: 78px 1fr auto;
+    grid-template-rows: 87.5px auto 80px;
     height: 100vh;
   }
 
   #left-row-1 {
     padding: 10px;
     background-color: #8866ab;
-    height: 68px;
   }
-
+  
   #left-row-2 {
     padding: 10px;
     background-color: #202335;
     border: 10px solid #8866ab;
-    height: 1fr;
+    height: auto;
   }
 
   #left-row-3 {
     padding: 10px;
-    background-color: #8866ab;
-    height: auto;
+    background-color: #202335;
   }
 
   #right-column {
@@ -114,7 +136,7 @@ html, body {
   }
 
   .left-column-header-1 {
-    color: #f0f38f;
+    color: #ffffff;
     display: block;
     margin-left: 5px;
     margin-right: 5px;
@@ -125,6 +147,7 @@ html, body {
   .left-column-header-2 {
     color: #fdffb5;
     display: block;
+    margin-top: 20px;
     margin-left: 20pt;
     margin-right: 20pt;
     width: 90%; 
@@ -132,7 +155,7 @@ html, body {
   }
 
   .left-column-header-3 {
-    color: #f0f38f;
+    color: #fdffb5;
     display: block;
     margin-left: 20pt;
     margin-right: 20pt;
@@ -150,7 +173,7 @@ html, body {
   }
 
   .left-column-paragraph-2 {
-    color: #202335;
+    color: #fdffb5;
     display: block;
     margin-left: 20pt;
     margin-right: 20pt;

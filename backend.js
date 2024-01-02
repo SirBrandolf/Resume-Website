@@ -1,7 +1,7 @@
 document.getElementById('linkedin').addEventListener('click', function() {
-    window.location.href = 'https://www.linkedin.com/in/brandonwang05/'; 
+    window.open('https://www.linkedin.com/in/brandonwang05/', '_blank').focus(); 
 });
 
 document.getElementById('github').addEventListener('click', function() {
-    window.location.href = 'https://github.com/SirBrandolf'; 
+    window.open('https://github.com/SirBrandolf', '_blank').focus()
 });
