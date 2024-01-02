@@ -1,37 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div class="columns">
-        <div>
-            <!-- Content for the first column -->
-            <head>
-                <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" 
-                rel="stylesheet">
-                <link href="style.css" rel="stylesheet">
-        
-                <div class="main-title">
-                    <h1>My Resume</h1>
-                </div>
-                 
-            </head>
-        </div>
 
-        <div>
-            <!-- Content for the second column -->
-            <body>
-                <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" 
-                rel="stylesheet">
-                <link href="style.css" rel="stylesheet">
-                
-                <div class="header-2">
-                    <h2>Welcome</h2>
-                </div>
-                <div class="paragraph-2">
-                    <p>This is my website :3</p>
-                </div>
-                
-            </body>
-        </div>
-    </div>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Website</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
 
+    <body>
+        <!-- Sidebar -->
+        <ul id="sidebar">
+            <li class="ibm-plex-mono-font"><a class="active" href="#home">Home</a></li>
+            <li class="ibm-plex-mono-font"><a href="#contact">Contact</a></li>
+            <li class="ibm-plex-mono-font"><a href="#about">About</a></li>
+        </ul>
+        <!------------->
+
+        <!-- Main Content -->
+        <div class="columns">
+
+            <!-- First Column -->
+            <div class="column" id="left-column">
+
+                <!-- First Row -->
+                <div id="left-row-1">
+                    <div class="left-column-header-1">
+                        <p1 class="dm-sans-font" id="title-header">BRANDON WANG</p1>
+                    </div>
+                </div>
+                <!--------------->
+
+                <!-- Second Row -->
+                <div id="left-row-2">
+                    <div class="left-column-header-2">
+                        <h1 class="ibm-plex-mono-font">
+                            Welcome to my website!_
+                        </h1>
+                    </div>
+
+                    <div class="left-column-paragraph-1">
+                        <p class="ibm-plex-mono-font">
+                            I am an aspiring software engineer who hopes to one day find stable employment in the tech industry. 
+                            <br> 
+                            (Please I need a job)
+                            <br>
+                            <br>
+                            Currently, I'm studying at the University of Waterloo for a <span class="mint-colored-text">Bachelors of Computer Science</span> and 
+                            a student at Wilfrid Laurier University for a <span class="mint-colored-text">Bachelors of Business Administration</span>.
+                            <br>
+                            <br>
+                            My main sources of pleasure are drinking obscene amounts of coffee, board games, video games, jogging, and painting. 
+                            <br>
+                            <span class="mint-colored-text">(Ex: see the background image)</span>
+
+                        </p>
+                    </div>
+                </div>
+                <!---------------->
+
+                <!-- Third Row -->
+                <div id="left-row-3">
+                    <div class="left-column-header-3">
+                        <h1 class="ibm-plex-mono-font">Technical Skills</h1>
+                    </div>
+
+                    <div class="left-column-paragraph-2">
+                        <p class="ibm-plex-mono-font">
+                            <!-- Languages -->
+                            <strong>Languages:</strong> 
+                            <br>
+                            <span class="indent-text">Python, C++, Racket, HTML, CSS, </span>
+                            <br>
+                            <span class="indent-text">JavaScript</span>
+                            <br>
+                            <br>
+                            <!--------------->
+                            <!-- Frameworks -->
+                            <strong>Frameworks:</strong> 
+                            <br>
+                            <span class="indent-text">REST API, Cohere API</span>
+                            <br>
+                            <br>
+                            <!---------------->
+                            <!-- Developer Tools -->
+                            <strong>Developer Tools:</strong> 
+                            <br>
+                            <span class="indent-text">Git, VS Code, Visual Studio, </span>
+                            <br>
+                            <span class="indent-text">Godot Game Engine</span>
+                            <!--------------------->
+                        </p>
+                    </div>
+
+                    <div class="linkedin-button" id="linkedin">
+                        <img src="Pictures\Linkedin_Logo.png" alt="LinkedIn Logo" class="linkedin-logo">
+                    </div>
+                
+                </div>
+                <!-------------->
+
+            </div>
+            <!------------------>
+
+            <!-- Second Column -->
+            <div class="column" id="right-column">
+                <body>
+                    <link href="style.css" rel="stylesheet">
+                    
+                    <div class="right-column-header-1">
+                        <h1 class="ibm-plex-mono-font">Welcome</h1>
+                    </div>
+                    <div class="right-column-paragraph-1">
+                        <p1 class="ibm-plex-mono-font">This is my website :3</p1>
+                    </div>
+                    
+                </body>
+            </div>
+            <!------------------->
+        </div>
+        <!------------------>
+
+        <!-- Link to JavaScript -->
+        <script src="backend.js"></script>
+    </body>
 
 </html>
