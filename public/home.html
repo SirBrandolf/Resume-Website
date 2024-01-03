@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,700;9..40,800&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("_cvijEaP_OhhdDxw4"); 
+            })();
+        </script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Sidebar -->
+        <ul id="sidebar">
+            <li class="ibm-plex-mono-font"><a class="active" href="#home"><strong>Home</strong></a></li>
+            <li class="ibm-plex-mono-font"><a href="#contact"><strong>Contact</strong></a></li>
+            <li class="ibm-plex-mono-font"><a href="#art"><strong>Art</strong></a></li>
+        </ul>
+        <!------------->
+
+        <!-- Main Content -->
+        <div class="columns">
+
+            <!-- First Column -->
+            <div class="column" id="left-column">
+
+                <!-- First Row -->
+                <div id="left-row-1">
+                    <div class="left-column-header-1">
+                        <p1 class="dm-sans-font" id="title-header"><strong>BRANDON WANG</strong></p1>
+                    </div>
+                </div>
+                <!--------------->
+
+                <!-- Second Row -->
+                <div id="left-row-2">
+                    <div class="left-column-header-2">
+                        <p1 class="ibm-plex-mono-font" id="normal-header">
+                            Welcome to my website!_
+                        </p1>
+                    </div>
+
+                    <div class="left-column-paragraph-1">
+                        <p class="ibm-plex-mono-font">
+                            I am an aspiring software engineer who hopes to one day find stable employment in the tech industry. 
+                            <br> 
+                            <span class="mint-colored-text">(Please I need a job)</span>
+                            <br>
+                            <br>
+                            Currently, I'm studying at the University of Waterloo for a <span class="mint-colored-text">Bachelors of Computer Science</span> and 
+                            at Wilfrid Laurier University for a <span class="mint-colored-text">Bachelors of Business Administration</span>.
+                            <br>
+                            <br>
+                            My main sources of pleasure are drinking obscene amounts of coffee, board games, video games, jogging, and painting. 
+                            <br>
+                            <span class="mint-colored-text">(Ex: see the background image)</span>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <div class="left-column-header-3">
+                        <p1 class="ibm-plex-mono-font" id="normal-header">Technical Skills_</p1>
+                    </div>
+
+                    <div class="left-column-paragraph-2">
+                        <p class="ibm-plex-mono-font">
+                            <!-- Languages -->
+                            <span class="mint-colored-text">Languages:</span> 
+                            <br>
+                            <span class="indent-text">HTML, CSS, Python, C++, Racket,</span>
+                            <br>
+                            <span class="indent-text">JavaScript, Turing</span>
+                            <br>
+                            <br>
+                            <!--------------->
+                            <!-- Frameworks -->
+                            <span class="mint-colored-text">Frameworks:</span> 
+                            <br>
+                            <span class="indent-text">REST API, Cohere API, Express</span>
+                            <br>
+                            <br>
+                            <!---------------->
+                            <!-- Developer Tools -->
+                            <span class="mint-colored-text">Developer Tools:</span> 
+                            <br>
+                            <span class="indent-text">Git, VS Code, Visual Studio, </span>
+                            <br>
+                            <span class="indent-text">Godot Game Engine, Node.js</span>
+                            <!--------------------->
+                        </p>
+                    </div>
+                </div>
+                <!---------------->
+
+                <!-- Third Row -->
+                <div id="left-row-3">
+                    <div class="linkedin-button" id="linkedin">
+                        <img src="Pictures\Linkedin_Logo.png" alt="LinkedIn Logo" class="linkedin-logo">
+                    </div>
+
+                    <div class="github-button" id="github">
+                        <img src="Pictures\GitHub_Logo.png" alt="GitHub Logo" class="github-logo">
+                    </div>
+                </div>
+                <!-------------->
+
+            </div>
+            <!------------------>
+
+            <!-- Second Column -->
+            <div class="column" id="right-column">
+                <!-- Home -->
+                <div id="home" class="right-column-content active">
+                    <div class="scrollable-column">
+                        <div class="projects-title">
+                            <p><strong>MY PROJECTS</strong></p>
+                        </div>
+                        <div class="projects-page">
+                            <!-- Card 1 -->
+                            <div class="card">
+                                <img src="Pictures\GitGest.png" alt="GitGest Screenshot">
+                                <div class="card-description">
+                                    <p1 class="ibm-plex-mono-font" id="normal-header">
+                                        <strong>GitGest</strong> | Python, Flask, React, Javascript, CSS, HTML, REST API | October 2023 - October 2023
+                                    </p1>
+                                    <p class="ibm-plex-mono-font">
+                                        This project <span class="mint-colored-text">summarizes a user’s GitHub Repository Commit History</span> up to the last time they contributed.
+                                        <br>
+                                        <span class="mint-colored-text">I integrated Cohere’s API</span> into the backend using <span class="mint-colored-text">REST API methodology</span>, enabling the reception of GitHub
+                                        Repository Commits. 
+                                        <br>
+                                        Furthermore, I <span class="mint-colored-text">led development</span> of the presentation and pitch for this project, helping the group win developer tickets to the 2023
+                                        Collision Tech Conference during Hack The Valley 8.
+                                    </p>
+                                </div>
+                            </div>
+                            <!------------>
+
+                            <!-- Card 2 -->
+                            <div class="card">
+                                <img src="Pictures\My_Website.png" alt="Resume Website Screenshot">
+                                <div class="card-description">
+                                    <p1 class="ibm-plex-mono-font" id="normal-header">
+                                        <strong>My Website</strong> | JavaScript, CSS, HTML, NODE.js | <br> December 2023 - January 2024
+                                    </p1>
+                                    <p class="ibm-plex-mono-font">
+                                        This website is a <span class="mint-colored-text">solo project</span> designed to act as a stylized resume. 
+                                        <br>
+                                        I built this using <span class="mint-colored-text">CSS, HTML, and JavaScript</span>, estabilishing a <span class="mint-colored-text">local server using Node.js and the Express framework</span> for testing of the website.
+                                        <br>
+                                        Includes <span class="mint-colored-text">links to my Linkedin and Github</span> with a section for users of the website to <span class="mint-colored-text">send emails</span> and a section to <span class="mint-colored-text">display my recent artworks</span>.
+                        
+                                    </p>
+                                </div>
+                            </div>
+                            <!------------>
+
+                            <!-- Card 3 -->
+                            <div class="card">
+                                <img src="Pictures\Crustacean_Platformer.png" alt="Crustacean Platformer Sprite">
+                                <div class="card-description">
+                                    <p1 class="ibm-plex-mono-font" id="normal-header">
+                                        <strong>Crustacean Platformer</strong> | C#, GDScript, Godot Engine | <br> December 2023 - Ongoing
+                                    </p1>
+                                    <p class="ibm-plex-mono-font">
+                                        This is an ongoing <span class="mint-colored-text">2D platformer game</span> in development together with<span class="mint-colored-text"> fellow University of Waterloo Student Andrew Yang in Computer Engineering</span>. 
+                                        <br>
+                                        I <span class="mint-colored-text">designed all artwork</span> for the game and have <span class="mint-colored-text">implemented basic gravity and partial movement</span>. 
+                                        <br>
+                                        <br>
+                                        <span class="mint-colored-text">Still in Development</span>.
+                                    </p>
+                                </div>
+                            </div>
+                            <!------------>
+                        </div>
+                    </div>
+
+                </div>
+                <!---------->
+                
+                <!-- Contact -->
+                <div id="contact" class="right-column-content">
+                    <div class="email-card ibm-plex-mono-font">
+                        <h2>Contact Form</h2>
+                        <form id="contactForm">
+                            <div class="input-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="subject">Email:</label>
+                                <input type="text" id="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit">Send Email</button>
+                        </form>
+                    </div>
+                </div>
+                <!------------->
+
+                <!-- Art -->
+                <div id="art" class="right-column-content art-column">
+                    <p class="ibm-plex-mono-font">
+                        <img src="Pictures\Calm_Before_The_Storm.PNG" alt="Calm Before The Storm">
+                        <img src="Pictures\Fisherman’s_Delight.PNG" alt="Fisherman’s Delight">
+                        <img src="Pictures\The_Morning_Rays.PNG" alt="The Morning Rays">
+                    </p>
+                </div>
+                <!--------->             
+            </div>
+            <!------------------->
+        </div>
+        <!------------------>
+
+        <!-- Link to JavaScript -->
+        <script src="backend.js"></script>
+    </body>
+
+</html>

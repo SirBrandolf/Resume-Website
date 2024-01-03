@@ -1,0 +1,339 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-image: url("Pictures/Afternoon_Coffee.png");
+    background-size: cover;       
+    background-position: top; 
+    background-attachment: fixed;
+  }
+
+  .ibm-plex-mono-font {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+  }
+
+  .dm-sans-font {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  #title-header {
+    font-size: 43px;
+    text-shadow: #202335 -3px 3px;  
+  }
+
+  #normal-header {
+    font-size: 25px;
+    color: #ff83d4; 
+  }
+
+  .mint-colored-text {
+    color: #4fff93; 
+  }
+
+  .indent-text {
+    margin-left: 20px; 
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    right: 0;
+    background-color: #202335;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1000;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(243, 242, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #bda289;
+    color: #202335;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #3a3975;
+    color: rgb(243, 242, 255);
+  }
+
+  .linkedin-button {
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .linkedin-logo {
+    height: 40px; 
+  }
+
+  .linkedin-button:hover {
+    background-color: #3a3975;
+  }
+
+  .github-button {
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-logo {
+    height: 40px; 
+  }
+
+  .github-button:hover {
+    background-color: #3a3975;
+  }
+
+  .columns {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 375px auto;
+    height: 100vh;
+  }
+
+  #left-column {
+    display: grid;
+    background-color: #bda289;
+    grid-template-rows: 70px auto 80px;
+    height: 100vh;
+  }
+
+  #left-row-1 {
+    padding: 10px;
+    background-color: #bda289;
+  }
+  
+  #left-row-2 {
+    padding: 10px;
+    background-color: #202335;
+    border: 10px solid #bda289;
+    border-radius: 20px;
+    overflow: auto;
+    height: auto;
+  }
+
+  #left-row-3 {
+    padding: 10px;
+    background-color: #202335;
+  }
+
+  #right-column {
+    padding: 0;
+  }
+
+  .left-column-header-1 {
+    color: #ffffff;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .left-column-header-2 {
+    color: #fdffb5;
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .left-column-header-3 {
+    color: #fdffb5;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .left-column-paragraph-1 {
+    color: #fdffb5;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .left-column-paragraph-2 {
+    color: #fdffb5;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .right-column-content {
+    display: none; 
+  }
+
+  .right-column-content.active {
+    display: block; 
+  }
+
+  #home {
+    color: #ffffff;
+    
+  }
+
+  .scrollable-column {
+    position: relative;
+    margin-right: 150px;
+    overflow: auto; 
+    height: 100vh;
+    background-color: transparent;
+  }
+
+  .projects-title {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 35vh;
+    font-size: 15vh;
+    text-shadow: 
+      #cdcdcd 0 1vh,
+      #846d62 0 2vh,
+      #4f3d34 0 3vh,
+      #1e1206 0 4vh; 
+  }
+
+  .scrollable-column::after {
+    content: "";                       /* Required for pseudo-elements */
+    position: absolute;                /* Position relative to the container */
+    bottom: -50vh;                         /* Stick to the bottom edge */
+    left: 0;                           /* Start from the left edge */
+    right: 0;                          /* Stretch to the right edge */
+    height: 50vh;                      /* Adjust as needed to determine the height of the gradient fade */
+    background: linear-gradient(to bottom, transparent, #3a3975); /* Replace #yourColorHere with your desired color */
+  }
+
+  .projects-page {
+    padding: 20px; 
+    margin-top: 95vh;
+    background-color: #3a3975;
+  }
+
+  .card {
+    display: flex;
+    background-color: #202335;
+    align-items: top; 
+    padding: 10px;
+    min-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    height: 230px;
+  }
+
+  .card img {
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+  }
+
+  .card-description {
+    background-color: #3a3975;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color:#ffffff;
+    overflow: auto;
+  }
+
+  #contact {
+    color: #ffffff;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    text-align: left;
+  }
+
+  .email-card {
+    background-color: #202335;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15vh;
+    margin-right: 150px;
+    min-width: 500px;
+    box-shadow: 0 0 10px #040416;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+  } 
+
+  button {
+    padding: 10px 20px;
+    background-color: #bda289;
+    color: #202335;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #4f3d34;
+  }
+
+  #art {
+    color: #202335;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    width: 90%; 
+    text-align: left;
+  }
+
+  .art-column {
+    position: relative;
+    margin-right: 150px;
+    overflow: auto; 
+    height: 100vh;
+  }
+
+  .art-column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #202335;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 50%;
+  }
