@@ -213,6 +213,8 @@ html, body {
       #846d62 0 2vh,
       #4f3d34 0 3vh,
       #1e1206 0 4vh; 
+    background-color: #202335;
+    height: 23vh;
   }
 
   .scrollable-column::after {
