@@ -218,17 +218,17 @@ html, body {
   }
 
   .scrollable-column::after {
-    content: "";                       /* Required for pseudo-elements */
-    position: absolute;                /* Position relative to the container */
-    bottom: -50vh;                         /* Stick to the bottom edge */
-    left: 0;                           /* Start from the left edge */
-    right: 0;                          /* Stretch to the right edge */
-    height: 50vh;                      /* Adjust as needed to determine the height of the gradient fade */
-    background: linear-gradient(to bottom, transparent, #3a3975); /* Replace #yourColorHere with your desired color */
+    content: "";
+    position: absolute;
+    bottom: -53vh;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    background: linear-gradient(to bottom, transparent, #3a3975); 
   }
 
   .projects-page {
-    padding: 20px; 
+    padding: 5vh; 
     margin-top: 95vh;
     background-color: #3a3975;
   }
