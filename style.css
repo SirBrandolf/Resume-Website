@@ -4,7 +4,7 @@ html, body {
   }
 
   body{
-    background-image: url("Pictures/Afternoon_Coffee.png");
+    background-image: url("pictures/Afternoon_Coffee.png");
     background-size: cover;       
     background-position: top; 
     background-attachment: fixed;
